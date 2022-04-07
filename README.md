@@ -29,7 +29,7 @@ The following is a list of design considerations when it comes to storage in AKS
     * If you want to access blob storage like a file system, you can leverage the [blob CSI driver](https://github.com/kubernetes-sigs/blob-csi-driver) in Kubernetes.
   * **Other**: There are a number of specialized storage solutions in Azure that can also be integrated with Kubernetes. These won't be explored in depth in this document.
     * [HPC cache](https://docs.microsoft.com/en-us/azure/aks/azure-hpc-cache): Azure HPC Cache speeds access to your data for high-performance computing (HPC) tasks. By caching files in Azure, Azure HPC Cache brings the scalability of cloud computing to your existing workflow.  
-    * [ADLS Gen 2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction): A special type of Azure blob storage optimized for big data workloads like Hadoop and Spark. I can't find ADLS Gen 2 docs with AKS.
+    * [ADLS Gen 2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction): A special type of Azure blob storage optimized for big data workloads like Hadoop and Spark. I didn't find much ADLS Gen 2 docs with AKS.
   
 # How to select the right storage service
 Picking the right storage solution can be hard, and will require some testing on your side. However, consider the following when selecting a storage solution in AKS:
